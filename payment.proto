@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package payment;
+
+import "payment_messages.proto";
+
+
+// Service definition
+service Payment {
+  rpc MakePayment(payment.PaymentRequest) returns (payment.Transaction) {}
+  rpc GetTransactionHistory(payment.User) returns (stream payment.Transaction) {}
+  rpc GetAccountBalance(payment.User) returns (payment.User) {}
+  rpc AddAccount(payment.User) returns (payment.User) {}
+}
