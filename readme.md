@@ -22,7 +22,7 @@ Follow these steps to set up and use the Payment Service:
 
 To copy the code clone the repository.
 
-```git clone <repository-url> ```
+```git clone https://github.com/amnrandh/grpc-payment-service```
 
 #### Start the Payment Service Server:
 Start the payment service by running the command below.
